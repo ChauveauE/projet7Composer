@@ -65,10 +65,25 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ 
-(function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-console.log('hello');
+"use strict";
+
+
+//const myModule = require(./myModule);
+//console.log(myModule.foo);
+
+//console.log('hello');
+var a = "J'apprends webpack!";
+var g = "je fais un test";
+
+function component() {
+	var element = document.createElement('div');
+	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+	return element;
+}
+
+document.body.appendChild(component());
 
 /***/ })
 /******/ ]);
